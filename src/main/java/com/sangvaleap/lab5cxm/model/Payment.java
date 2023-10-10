@@ -9,6 +9,6 @@ import java.time.LocalDate;
 @Embeddable
 @Data
 public class Payment {
-    private LocalDate paydate;
+    private String paydate;
     private double amount;
 }

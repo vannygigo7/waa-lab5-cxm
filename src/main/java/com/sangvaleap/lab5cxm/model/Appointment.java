@@ -13,7 +13,9 @@ public class Appointment {
     @Embedded
     private Payment payment;
     @ManyToOne
+    @JoinColumn(name = "patient")
     private Patient patient;
     @ManyToOne
+    @JoinColumn(name = "doctor")
     private Doctor doctor;
 }
